@@ -1,0 +1,92 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+      <link href="nutri.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table style="width: 1340px; background-image: url('Projpic/header.jpg'); height: 90px; color: #FFFFFF; font-size: x-large; font-weight: bold;">
+            <tr>
+                <td align="center">
+                   
+               Efficient Utility Mining for Nutrition Calculation</td>
+            </tr>
+        </table>
+        <table style="width: 1340px; height: 15px; font-size: x-large; background-color: #FF9900; color: #000000; background-image: url('Projpic/subheader.png');">
+            <tr>
+                <td align="center">
+                   
+                </td>
+            </tr>
+        </table>
+
+          <table style="height: 288px; width: 276px">
+            <tr>
+                <td valign="top">
+                    <fieldset style="height: 301px; width: 221px">
+                        <legend>
+                        Menu
+                        </legend>
+                        <table style="height: 274px; width: 199px">
+                            <tr>
+                                <td bgcolor="#CCCCCC" style="background-color: #FFC082">
+                                    <asp:HyperLink ID="HyperLink1" runat="server" 
+                                        NavigateUrl="~/uploaddataset.aspx" ForeColor="Maroon">Upload Dataset</asp:HyperLink>
+                                </td>
+                            </tr>
+                               <tr>
+                                <td bgcolor="#CCCCCC" style="background-color: #FFC082">
+                                    <asp:HyperLink ID="HyperLink2" runat="server" ForeColor="Maroon" NavigateUrl="~/viewdataset.aspx">View Dataset</asp:HyperLink>
+                                </td>
+                            </tr>
+                               <tr>
+                                <td bgcolor="#CCCCCC" style="background-color: #FFC082">
+                                    <asp:HyperLink ID="HyperLink3" runat="server" ForeColor="Maroon" NavigateUrl="~/utilitymining.aspx">Utility Mining</asp:HyperLink>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#CCCCCC" style="background-color: #FFC082">
+                                    <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/changepwd.aspx" ForeColor="Maroon">Change Password</asp:HyperLink>
+                                </td>
+                            </tr>
+                             <tr>
+                                <td bgcolor="#CCCCCC" style="background-color: #FFC082">
+                                    <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/index.aspx" ForeColor="Maroon">Logout</asp:HyperLink>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </td>
+                <td valign="top">
+                    <table bgcolor="#CCCCCC" style="width: 910px">
+                        <tr>
+                            <td style="color: #800000">
+                                Welcome Admin!!!
+                            </td>
+                            <td style="color: #800000">
+                                Date:
+                                <asp:Label ID="lbldate" runat="server" Text="Label"></asp:Label>
+                            </td>
+                            <td style="color: #800000">
+                                Time:
+                                <asp:Label ID="lbltime" runat="server" Text="Label"></asp:Label>
+                            </td>
+                        </tr>
+                    </table>
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>        
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
